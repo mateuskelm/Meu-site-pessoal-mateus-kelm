@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Site Mateus Kelm</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Pessoal</title>
+
+  <!-- CSS: Estilização das páginas -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Link para o seu arquivo CSS -->
+</head>
+
+<body>
+  <!-- HTML: Estruturação das páginas -->
+  <header class="text-center py-4">
+    <h1>Site de Mateus Kelm</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" id="inicio-tab" data-toggle="tab" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" id="pagina-pessoal-tab" data-toggle="tab" href="#pagina-pessoal">Página Pessoal</a></li>
+          <li class="nav-item"><a class="nav-link" id="humanas-tab" data-toggle="tab" href="#humanas">Ciências Humanas</a></li>
+          <li class="nav-item"><a class="nav-link" id="natureza-tab" data-toggle="tab" href="#natureza">Ciências da Natureza</a></li>
+          <li class="nav-item"><a class="nav-link" id="linguagens-tab" data-toggle="tab" href="#linguagens">Linguagens</a></li>
+          <li class="nav-item"><a class="nav-link" id="matematica-tab" data-toggle="tab" href="#matematica">Matemática</a></li>
+          
+          <li class="nav-item"><a class="nav-link" id="iot-atividades-tab" data-toggle="tab" href="#iot-atividades">IOT ATIVIDADES</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Conteúdo das seções -->
+    <div class="tab-content mt-4">
+      <!-- Seção Início -->
+      <div class="tab-pane fade show active" id="inicio">
+        <h2>Bem-vindo ao Site de Mateus Kelm!</h2>
+        <p>
+          Este site é um ponto de encontro dedicado ao aprendizado contínuo e ao compartilhamento de ideias nas mais diversas áreas do saber. Aqui, você encontrará conteúdos que explorei e aprendi ao longo da minha jornada, desde temas relacionados à tecnologia e inovação até áreas mais específicas que despertaram minha curiosidade.
+Cada seção foi pensada para oferecer uma experiência enriquecedora e intuitiva, com informações detalhadas e recursos que irão ajudar você a expandir seus conhecimentos. Navegue pelas diferentes categorias para explorar os tópicos que mais despertam seu interesse e descubra o prazer de aprender algo novo!</p>      
+
+      </div>
+      <!-- Seção Página Pessoal -->
+      <div class="tab-pane fade" id="pagina-pessoal">
+        <h2>Minha Página Pessoal</h2>
+        <img src="mateuskelm.png" alt="Foto pessoal:" width="350" height="350">
+        <p>
+          Esta seção é dedicada a compartilhar um pouco mais sobre mim. Aqui você encontrará informações sobre meus interesses, hobbies e experiências.
+        </p>
+        <ul class="list-group mb-3">
+          <li class="list-group-item" id="Interesse1" onclick="showInfo('interesse1-info')">Interesse 1</li>
+          <li class="list-group-item" id="Interesse2" onclick="showInfo('interesse2-info')">Interesse 2</li>
+          <li class="list-group-item" id="Sobre mim" onclick="showInfo('interesse3-info')">Sobre mim</li>
+          <li class="list-group-item" id="Hobby1" onclick="showInfo('hobby1-info')">Hobby 1</li>
+          <li class="list-group-item" id="Hobby2" onclick="showInfo('hobby2-info')">Hobby 2</li>
+        </ul>
+
+        <div id="interesse1-info" class="info-detail" style="display:none;">
+          <p><strong>Interesse 1:</strong> Gosto muito de jogar futebol no meu tempo livre, especialmente porque é uma ótima oportunidade para relaxar e me conectar com os amigos. Todos os sábados, me encontro com meu grupo para jogar uma partida animada. Além do futebol, o pós-jogo é sempre especial, pois aproveitamos para fazer um churrasco e passar algumas horas juntos, conversando sobre tudo: desde estratégias de jogo até nossos planos para o futuro. Essa rotina semanal é algo que prezo muito, pois fortalece minhas amizades e me mantém ativo fisicamente.</p>
+          <img src="feijoes.png.jpeg" alt="Meu time: " width="350" height="350">
+        </div>
+        <div id="interesse2-info" class="info-detail" style="display:none;">
+          <p><strong>Interesse 2:</strong> Programação e Tecnologia
+            Meu interesse por programação e tecnologia começou quando eu era mais jovem, e até hoje continuo a me aprofundar nesse campo. Gosto de aprender sobre novas tecnologias, principalmente sobre computação em nuvem, pois acredito que ela é o futuro da infraestrutura tecnológica. Meus estudos incluem aprender sobre plataformas como AWS e Google Cloud, além de explorar novas ferramentas de desenvolvimento e automação. O que mais me fascina é a ideia de criar soluções que possam transformar empresas e facilitar a vida das pessoas. Programar, para mim, não é apenas um trabalho, mas uma paixão que me motiva a buscar sempre mais.</p>
+            <img src="nuvem[.jpg" alt="Meu time: " width="350" height="350">
+        </div>
+        <div id="interesse3-info" class="info-detail" style="display:none;">
+          <p><strong>Sobre mim e reflexão sobre o ensino medio:</strong> Meu nome é Mateus Kelm, tenho 18 anos e sou uma pessoa muito ativa. Sempre busco me envolver em atividades físicas e mentais que me ajudem a crescer e aprender constantemente. Além de praticar futebol com meus amigos, gosto de explorar novos hobbies e interesses, como a programação e o estudo de novas tecnologias. Acredito que a vida é feita de desafios, e estou sempre em busca de novos aprendizados e experiências, Durante o meu ensino médio no Senac, tive uma das melhores experiências da minha vida. Além de aprender conteúdos importantes para o mercado de trabalho, também desenvolvi habilidades práticas e uma visão mais ampla sobre diversas áreas de conhecimento. O ambiente de ensino, os professores e os colegas contribuíram muito para o meu crescimento, tanto acadêmico quanto pessoal. Aprendi a valorizar o trabalho em equipe, a organização e a disciplina, o que foi essencial para meu desenvolvimento.
+
+            .
+
+            Sou muito dedicado ao que faço, seja no trabalho, nos estudos ou nas atividades que me divertem, e estou sempre em busca de equilibrar a vida pessoal, os amigos e o autocrescimento. Gosto de interagir com pessoas que têm mentalidade aberta e estão dispostas a compartilhar conhecimentos.</p>
+        </div>
+        <div id="hobby1-info" class="info-detail" style="display:none;">
+          <p><strong>Hobby 1:</strong> Desde criança, sou fascinado por carros. Minha paixão começou quando meu avô me levou a uma corrida de kart, e desde então não consegui mais parar de pensar sobre motores, peças e tudo relacionado a automóveis. Sempre fui aquele tipo de criança que desmontava brinquedos para entender como funcionavam, e logo comecei a aprender sobre mecânica e engenharia automotiva. Hoje em dia, tenho meu próprio carro e adoro personalizá-lo, sempre buscando formas de melhorar o desempenho e a estética. Carros são mais do que um hobby para mim; são uma forma de arte e inovação.</p>
+          <img src="golf.jpg" alt="meu carro dos sonhos: " width="350" height="350">
+        </div>
+        <div id="hobby2-info" class="info-detail" style="display:none;">
+          <p><strong>Hobby 2:</strong> Fortnite é mais do que um jogo para mim; é uma forma de escapar e me divertir. Jogo desde os primeiros capítulos, quando o jogo ainda estava começando a se tornar popular. Gosto da estratégia envolvida, do modo competitivo e, claro, de jogar com amigos online. Cada nova temporada traz novidades e desafios, o que mantém o jogo sempre fresco e emocionante. Além disso, o universo de Fortnite me permite explorar a criatividade, seja construindo estruturas incríveis ou criando novas skins. Fortnite sempre foi, e continua sendo, uma parte importante da minha vida de entretenimento.</p>
+          <img src="fortnite.jpg" alt="meu carro dos sonhos: " width="350" height="350">
+        </div>
+      </div>
+
+      
+
+      <!-- JavaScript: Funcionalidade para exibir/esconder informações -->
+      <script>
+        function showInfo(infoId) {
+          // Esconde todas as informações
+          var infos = document.querySelectorAll('.info-detail');
+          infos.forEach(function(info) {
+            info.style.display = 'none';
+          });
+          // Exibe a informação clicada
+          var selectedInfo = document.getElementById(infoId);
+          selectedInfo.style.display = 'block';
+        }
+      </script>
+
+      <!-- Seção Ciências Humanas -->
+      <div class="tab-pane fade" id="humanas">
+        <h2>Ciências Humanas</h2>
+        <ul class="list-group mb-3">
+          <li class="list-group-item" onclick="showTask('humanas', 'historia')">História</li>
+          <li class="list-group-item" onclick="showTask('humanas', 'geografia')">Geografia</li>
+          <li class="list-group-item" onclick="showTask('humanas', 'filosofia')">Filosofia</li>
+          <li class="list-group-item" onclick="showTask('humanas', 'sociologia')">Sociologia</li>
+        </ul>
+        <div id="task-info-humanas" class="d-none"></div>
+      </div>
+
+      <!-- Seção Ciências da Natureza -->
+      <div class="tab-pane fade" id="natureza">
+        <h2>Ciências da Natureza</h2>
+        <ul class="list-group mb-3">
+          <li class="list-group-item" onclick="showTask('natureza', 'fisica')">Física</li>
+          <li class="list-group-item" onclick="showTask('natureza', 'quimica')">Química</li>
+          <li class="list-group-item" onclick="showTask('natureza', 'biologia')">Biologia</li>
+        </ul>
+        <div id="task-info-natureza" class="d-none"></div>
+      </div>
+
+      <!-- Seção Linguagens -->
+      <div class="tab-pane fade" id="linguagens">
+        <h2>Linguagens</h2>
+        <ul class="list-group mb-3">
+          <li class="list-group-item" onclick="showTask('linguagens', 'portugues')">Português</li>
+          <li class="list-group-item" onclick="showTask('linguagens', 'ingles')">Inglês</li>
+          <li class="list-group-item" onclick="showTask('linguagens', 'artes')">Artes</li>
+          <li class="list-group-item" onclick="showTask('linguagens', 'educacao_fisica')">Educação Física</li>
+        </ul>
+        <div id="task-info-linguagens" class="d-none"></div>
+      </div>
+
+      <!-- Seção Matemática -->
+      <div class="tab-pane fade" id="matematica">
+        <h2>Matemática</h2>
+        <ul class="list-group mb-3">
+          <li class="list-group-item" onclick="showTask('matematica', 'matematica')">Matemática</li>
+      
+        </ul>
+        <div id="task-info-matematica" class="d-none"></div>
+      </div>
+
+      <!-- Nova Seção IOT ATIVIDADES -->
+
+    
+      <div class="tab-pane fade" id="iot-atividades">
+        <h2>IOT ATIVIDADES</h2>
+        <div class="atividade">
+          <h3>Atividade do Boné</h3>
+          <p><strong>Descrição:</strong> A atividade do boné foi uma tarefa realizada para a menção do 2º bimestre de 2024. O grupo responsável pela atividade foi composto por: Mateus Kelm, Andrei Rocha, Felipe Marangoni e Kauã Humberto. Tivemos que desenvolver um sistema inovador incorporado em um boné, que funcionasse de maneira similar a um sensor de ré. Esse sistema precisava ser capaz de detectar objetos próximos, emitir sinais sonoros e visuais de alerta, além de identificar a ausência de luz ambiente. Utilizamos a plataforma Arduino para implementar e integrar todos os componentes necessários para a realização da tarefa.</p>
+          <div class="fotos-videos">
+            <h4>Fotos e Vídeos:</h4>
+            <img src="bone.jpeg" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <video controls>
+              <source src="bonee.mp4" width="350" height="100" type="video/mp4">
+            </video>
+
+          </div>
+          <h3>Atividade do Carrinho</h3>
+          <p><strong>Descrição:</strong> A ativiidade do carrinho arduino foi uma atividade do 3 bimestre, realizado pelos alunos: Mateus Kelm, Andrei Rocha, Felipe Marangonni e Kauã humberto. Precisamos realizar um Robô Seguidor de Linha seguindo um tuturial, para realizar a atividade ultilizamos os seguintes equipamentos:
+            1x Uno R3 + Cabo Usb para Arduino
+            1x Ponte H Dupla L298N
+            1x Kit Chassi 2WD (2 rodas) Robô para Arduino
+            1x Adaptador Bateria 9V para Arduino
+            2x Sensor de Obstáculos Reflexivo Infravermelho
+            1x Jumpers – Macho/Macho – 20 Unidades de 20cm
+            1x Jumpers – Macho/Femea – 20 Unidades de 20cm
+            1x Bateria 9V
+            4x Pilhas AA (de preferência alcalinas)
+            Seguimos o passo a passo em um aplicativo para projetos chamado Thinkercad, nele fizemos a programação para o carrinho conseguir andar na linha e também fizemos a montagem do arduino para ver se tudo estava funcionando corretamente. No final fizemos a conexão aplicamos testes e corrigimos alguns erros e no final o resultado foi esse:
+            </p>
+          <div class="fotos-videos">
+            <h4>Fotos e Vídeos:</h4>
+            <img src="CARRINHO.png" alt="Atividade do Carrinho" width="450" height="450" class="img-fluid">
+
+            <video class="video-fluid" controls>
+              <source src="carrinho.mp4" type="video/mp4">
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+          
+          <style>
+            .fotos-videos img,
+            .fotos-videos video {
+              max-width: 25%;
+              height: "150";
+            }
+          </style>       
+          
+        </div>
+        <div class="atividade">
+          <h3>Atividade do 4 bimestre</h3>
+          <p><strong>Descrição:</strong> atividade do 4 bimestre e informações</p>
+          <div class="fotos-videos">
+            <h4>Fotos e Vídeos:</h4>
+            <img src="ss.PNG" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <img src="d1.PNG" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <img src="d2.PNG" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <img src="d3.PNG" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <img src="d5.PNG" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <img src="d6.PNG" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <img src="d7.PNG" alt="Atividade do Boné" width="350" height="350" class="img-fluid">
+            <video controls>
+              <source src="bonee.mp4" width="350" height="100" type="video/mp4">
+            </video>
+
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- HTML: Estruturação do rodapé -->
+  <footer class="text-center py-3">
+    <p>&copy; 2024 Meu Site Pessoal</p>
+  </footer>
+
+  <!-- JavaScript: Funcionalidades interativas -->
+  <script src="script.js"></script> <!-- Link para o seu arquivo JavaScript -->
+
+  <!-- JavaScript: Bootstrap e dependências -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
